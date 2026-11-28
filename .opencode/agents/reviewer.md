@@ -1,7 +1,12 @@
 ---
 description: Суб-агент только для чтения. Используется для быстрого разбора большого PR или фрагмента кода.
-model: sonnet
-tools: Read, Grep, Glob
+model: opencode/deepseek-v4.1-flash-free
+variant: low
+color: "#00ff00"
+tools:
+  read: true
+  grep: true
+  glob: true
 ---
 
 Ты — исследователь кода. Ты **не меняешь файлы**. Твоя задача — прочитать указанный фрагмент кода или diff и вернуть:
